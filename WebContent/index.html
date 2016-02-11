@@ -2,9 +2,36 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Cube Summations</title>
+<script type="text/javascript" src="scripts/CubeSummation.js"></script>
 </head>
 <body>
+<p>Web application developed to perform updates and queries on a 3 dimensional matrix of N*N*N elements.</p>
+The algorithm used to implement the logic of the calculations can be found in 
+<a href="https://www.hackerrank.com/challenges/cube-summation">this link</a>
+<br/><br/>
+<label>N: </label><input id="textBoxN" type="number"> <input  type="button" value="Initialize Matrix" onclick="initialize()"><br/>
+<br/><label id="errorLabel" style="color: red;"></label><br/><br/>
+<label>Update: </label><br/><br/>
+<label>X: </label><input type="number" id="x">
+<label>Y: </label><input type="number" id="y">
+<label>Z: </label><input type="number" id="z">
+<label>W: </label><input type="number" id="w">
+<input type="button" value="Update Matrix" onclick="updateClick()">
+<br/><br/>
 
+<label>Query: </label><br/><br/>
+<label>X1: </label><input type="number" id="x1">
+<label>Y1: </label><input type="number" id="y1">
+<label>Z1: </label><input type="number" id="z1"><br/><br/>
+<label>X2: </label><input type="number" id="x2">
+<label>Y2: </label><input type="number" id="y2">
+<label>Z2: </label><input type="number" id="z2">
+<input type="button" value="Query Sum" onclick="queryClick()"><br/><br/><br/>
+<table>
+<thead><tr><th>Operations</th></tr></thead>
+<tbody id="tableBody">
+</tbody>
+</table>
 </body>
 </html>
